@@ -14,9 +14,9 @@ if n==1:
     hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.7)
     mpDraw = mp.solutions.drawing_utils
 
-    model = load_model(r'C:\Users\DELL\OneDrive\Desktop\mp_hand_gesture')
+    model = load_model(r'C:\Users\DELL\OneDrive\Desktop\HCI_project\mp_hand_gesture')
 
-    f = open(r'C:\Users\DELL\OneDrive\Desktop\gesture.names', 'r')
+    f = open(r'C:\Users\DELL\OneDrive\Desktop\HCI_project\gesture.names', 'r')
     classNames = f.read().split('\n')
     f.close()
     print(classNames)
